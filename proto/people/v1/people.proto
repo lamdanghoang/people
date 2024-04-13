@@ -1,0 +1,25 @@
+syntax = "proto3";
+package people.v1;
+
+import "google/protobuf/any.proto";
+
+option go_package = "github.com/lamdanghoang/people/gen/go/people/v1";
+
+message OfficeStaff {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+    int32 working_days = 4;
+}
+
+message SaleStaff {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+    int32 product_quantity = 4;
+}
+
+message IsStaff {
+  google.protobuf.Any staff = 1;
+  int64               x      = 2;
+}
