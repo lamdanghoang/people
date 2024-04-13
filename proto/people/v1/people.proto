@@ -3,7 +3,7 @@ package people.v1;
 
 import "google/protobuf/any.proto";
 
-option go_package = "github.com/lamdanghoang/people/gen/go/people/v1";
+option go_package = "github.com/lamdanghoang/people/gen/go/people/v1;people";
 
 message OfficeStaff {
     int32 id = 1;
