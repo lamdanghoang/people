@@ -1,9 +1,9 @@
 syntax = "proto3";
-package people.v1;
+package people;
 
 import "google/protobuf/any.proto";
 
-option go_package = "github.com/lamdanghoang/people/gen/go/people/v1;people";
+option go_package = "people";
 
 message OfficeStaff {
     int32 id = 1;
